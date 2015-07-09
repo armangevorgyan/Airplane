@@ -1,4 +1,4 @@
-(function(app) {
+(function (app) {
     function Pilot(pilotname, pilotsurname) {
         this.pilotname = pilotname;
         this.pilotsurname = pilotsurname;
@@ -14,5 +14,6 @@
             this.pilotskills.push(skill);
         };
     }
+
     app.Pilot = Pilot;
 })(window.app);

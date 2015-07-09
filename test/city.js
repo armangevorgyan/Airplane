@@ -1,4 +1,4 @@
-(function(app) {
+(function (app) {
     function City(capital, latitude, longitude) {
         this.capital = capital;
         this.latitude = latitude;
@@ -8,5 +8,6 @@
             return this.capital;
         };
     }
+
     app.City = City;
 })(window.app);

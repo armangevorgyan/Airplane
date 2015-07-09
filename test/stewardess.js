@@ -1,4 +1,4 @@
-(function(app) {
+(function (app) {
     function Stewardess(stname, stsurname) {
         this.stname = stname;
         this.stsurname = stsurname;
@@ -15,5 +15,5 @@
         };
     }
 
-   app.Stewardess = Stewardess;
+    app.Stewardess = Stewardess;
 })(window.app);

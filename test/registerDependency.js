@@ -1,4 +1,4 @@
-(function(app){
+(function (app) {
     function RegisterDependency(htmlElementId, array, listType, labelPropertyName, valuePropertyName) {
         this.htmlElementId = htmlElementId;
         this.array = array;
@@ -22,5 +22,6 @@
             }
         };
     }
+
     app.RegisterDependency = RegisterDependency;
 })(window.app);

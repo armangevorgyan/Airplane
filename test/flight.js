@@ -1,4 +1,4 @@
-(function(app) {
+(function (app) {
     function Flight(airplane, citiesFrom, citiesTo, distance, pilots, stewardess) {
         this.dsf = airplane;
         this.citiesFrom = citiesFrom;
@@ -8,5 +8,6 @@
         this.Stewardess = stewardess;
 
     }
+
     app.Flight = Flight;
 })(window.app);

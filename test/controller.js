@@ -1,9 +1,9 @@
-(function(app) {
+(function (app) {
     function Controller() {
 
     }
 
-    Controller.prototype.workerSetForEdit = function(arg, workerList, selectedWorkerList, i) {
+    Controller.prototype.workerSetForEdit = function (arg, workerList, selectedWorkerList, i) {
 
         var editTd = document.getElementsByClassName("editTd")[i];
 
@@ -17,7 +17,7 @@
         console.log(selectedWorker.maxpass);
         console.log(selectedWorker.id);
     };
-    Controller.prototype.takePlaneForEdit = function() {
+    Controller.prototype.takePlaneForEdit = function () {
         var plane = document.getElementsByClassName("airplaneEdit")[0].options.selectedIndex;
         var planeModel = app.airPlanes[plane - 1];
         var editPlaneArray = document.getElementsByClassName("takePlane1");
@@ -30,7 +30,7 @@
         editPlaneArray[5].value = planeModel.minpass;
         document.getElementsByClassName("editAirplaneBlank")[0].style.display = "block";
     };
-    Controller.prototype.takeChangedPlane = function() {
+    Controller.prototype.takeChangedPlane = function () {
         var editedPlaneArray = document.getElementsByClassName("takePlane1");
 
         var model = editedPlaneArray[0].value;
@@ -56,7 +56,7 @@
         app.airPlanes[editPlaneIndex - 1] = newModel;
 
     };
-    Controller.prototype.takePilotForEdit = function() {
+    Controller.prototype.takePilotForEdit = function () {
         var pilot = document.getElementsByClassName("pilotEdit")[0].options.selectedIndex;
         var selectedPilot = app.pilotList[pilot - 1];
         var inputPilot = document.getElementsByClassName("takePilot");
@@ -65,7 +65,7 @@
 
 
     };
-    Controller.prototype.takeChangedPilot = function() {
+    Controller.prototype.takeChangedPilot = function () {
         var pilot = document.getElementsByClassName("pilotEdit")[0].options.selectedIndex;
         var selectedPilot = app.pilotList[pilot - 1];
         var pilotParam = document.getElementsByClassName("takePilot");
@@ -93,7 +93,7 @@
         }
     };
 
-    Controller.prototype.fly = function(clone, selectedPilotsList, selectedStewardessList) {
+    Controller.prototype.fly = function (clone, selectedPilotsList, selectedStewardessList) {
         var selectedPlaneIndex = document.getElementsByClassName("plane")[0].options.selectedIndex;
         var selectedPlane = app.airPlanes[selectedPlaneIndex - 1];
 
@@ -141,7 +141,7 @@
         app.flights.push(flyPropertiesObject);
         console.log(app.flights);
     };
-    Controller.prototype.addAirplanes = function() {
+    Controller.prototype.addAirplanes = function () {
 
         var addAirplaneParam = document.getElementsByClassName("takePlane");
 
@@ -174,7 +174,7 @@
 
 
     };
-    Controller.prototype.addCity = function() {
+    Controller.prototype.addCity = function () {
         var cityParam = document.getElementsByClassName("takeCity");
         if (cityParam[0].value.match(/^[A-Za-z\s]{3,}$/)) {
             var capital = cityParam[0].value;
@@ -207,7 +207,7 @@
 
         console.log(newCity);
     };
-    Controller.prototype.addPilots = function() {
+    Controller.prototype.addPilots = function () {
         var addPilotParam = document.getElementsByClassName("addPilot");
         for (var j = 0; j < addPilotParam.length; j++) {
             if (addPilotParam[j].value.match(/^[A-Za-z\s]{2,}$/)) {
@@ -237,7 +237,7 @@
         }
         console.log(newPilot);
     };
-    Controller.prototype.addStewardess = function() {
+    Controller.prototype.addStewardess = function () {
         var addStewardessParam = document.getElementsByClassName("addStewardess");
         for (var i = 0; i < addStewardessParam.length; i++) {
             if (addStewardessParam[i].value.match(/^[A-Za-z\s]{2,}$/)) {
@@ -260,7 +260,7 @@
         }
         console.log(newStewardess);
     };
-    Controller.prototype.calculate = function(lat1, lon1, lat2, lon2, clone) {
+    Controller.prototype.calculate = function (lat1, lon1, lat2, lon2, clone) {
         var radLat1 = lat1 * ( Math.PI / 180 );
         var radLon1 = lon1 * ( Math.PI / 180 );
         var radLat2 = lat2 * ( Math.PI / 180 );
@@ -278,7 +278,7 @@
         td1.appendChild(t1);
         clone.getElementsByClassName("trID")[0].appendChild(td1);
     };
-    Controller.prototype.add = function() {
+    Controller.prototype.add = function () {
 
         var selectedPlaneIndex = document.getElementsByClassName("plane")[0].options.selectedIndex;
         var selectedPlane = app.airPlanes[selectedPlaneIndex - 1];
@@ -315,7 +315,7 @@
         };
 
     };
-    Controller.prototype.start = function() {
+    Controller.prototype.start = function () {
 
         document.getElementsByClassName("update")[0].onclick = function () {
             app.view.update();

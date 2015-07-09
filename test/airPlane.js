@@ -1,4 +1,4 @@
-(function(app) {
+(function (app) {
     function Airplane(model, maxpil, minpil, maxfly, minpass, maxpass) {
         this.model = model;
         this.maxpil = maxpil;
@@ -14,5 +14,6 @@
             return this.model;
         };
     }
-app.AirPlane = Airplane;
+
+    app.AirPlane = Airplane;
 })(window.app);

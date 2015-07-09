@@ -1,8 +1,9 @@
-(function(window){
+(function (window) {
     function App() {
 
     }
-    App.prototype.init = function() {
+
+    App.prototype.init = function () {
         this.airPlanes = [];
         this.cities = [];
         this.pilotList = [];
@@ -13,7 +14,7 @@
         this.controller.start();
     };
     window.app = new App();
-    window.onload = function() {
+    window.onload = function () {
         window.app.init();
     };
 

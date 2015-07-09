@@ -1,7 +1,8 @@
-(function(app){
+(function (app) {
     function View() {
     }
-    View.prototype.init = function(){
+
+    View.prototype.init = function () {
         var airPlaneDropDown = new app.RegisterDependency("plane", app.airPlanes, "option", "model", "id");
         var citiesFromDropDown = new app.RegisterDependency("citiesFrom", app.cities, "option", "capital", "id");
         var citiesToDropDown = new app.RegisterDependency("citiesTo", app.cities, "option", "capital", "id");
@@ -22,18 +23,18 @@
         this.observeObj(app.stewardessList);
 
     };
-View.prototype.observeObj = function(arr) {
-    Array.observe(arr, function(changes){
-        changes.forEach(function(change){
-            console.log(change.type);
-            app.view.update();
-        })
-    });
-};
+    View.prototype.observeObj = function (arr) {
+        Array.observe(arr, function (changes) {
+            changes.forEach(function (change) {
+                console.log(change.type);
+                app.view.update();
+            })
+        });
+    };
 
     var clones = document.getElementsByClassName("Blank");
 
-    View.prototype.initDropDownsUpdateLists = function(arr, classname) {
+    View.prototype.initDropDownsUpdateLists = function (arr, classname) {
         for (var i = 1; i < clones.length; i++) {
             var updateLists = clones[i].getElementsByClassName(classname)[0];
             for (var k = 0; k < arr.length; k++) {
@@ -41,7 +42,7 @@ View.prototype.observeObj = function(arr) {
             }
         }
     };
-    View.prototype.update = function() {
+    View.prototype.update = function () {
 
         app.view.initDropDownsUpdateLists(app.pilotList, "pilotID");
         app.view.initDropDownsUpdateLists(app.stewardessList, "StewardessID");
@@ -49,7 +50,7 @@ View.prototype.observeObj = function(arr) {
 
     };
 
-    View.prototype.workerSet = function(clone, className, workerList, selectedWorkerList, i) {
+    View.prototype.workerSet = function (clone, className, workerList, selectedWorkerList, i) {
         var getNames = document.createElement("TR");
         var names = clone.getElementsByClassName("workerNames")[i].appendChild(getNames);
 
@@ -62,7 +63,7 @@ View.prototype.observeObj = function(arr) {
         console.log(selectedWorker.pilotskills);
     };
 
-    View.prototype.getText = function(clone) {
+    View.prototype.getText = function (clone) {
         var createPassTr = document.createElement("TR");
         var setPassTr = clone.getElementsByClassName("workerNames")[2].appendChild(createPassTr);
         var getPassNames = clone.getElementsByClassName("pass")[0].value;
@@ -71,7 +72,7 @@ View.prototype.observeObj = function(arr) {
         setPassTr.appendChild(createPassTd);
     };
 
-    View.prototype.checkBoxView = function() {
+    View.prototype.checkBoxView = function () {
 
         var checkBox = document.getElementsByClassName("checkboxSkills")[0];
         var checkBoxForEdit = document.getElementsByClassName("checkboxSkills")[1];
@@ -110,14 +111,14 @@ View.prototype.observeObj = function(arr) {
     };
 
 
-    View.prototype.addElements = function() {
+    View.prototype.addElements = function () {
 
         for (var i = 0; i < app.dependencies.length; i++) {
             app.dependencies[i].init();
 
         }
     };
-    View.prototype.editedCheckBoxView = function() {
+    View.prototype.editedCheckBoxView = function () {
         var checkBoxSkillsArray = document.getElementsByClassName("checkboxSkills")[0];
         var checkBoxSkillsForEditArray = document.getElementsByClassName("checkboxSkills")[1];
         for (var i = 0; i < checkBoxSkillsArray.length; i++) {
@@ -127,8 +128,6 @@ View.prototype.observeObj = function(arr) {
             editSpanLabel[i].innerHTML = app.airPlanes[i].model;
         }
     };
-
-
 
 
     app.view = new View();
