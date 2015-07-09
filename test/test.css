@@ -1,0 +1,236 @@
+.admin {
+    background-color: #b2c8ff;
+    width: 25%;
+    height: auto;
+    float: left;
+}
+
+.latitude {
+    float: left;
+}
+
+.longitude {
+    float: left;
+}
+
+.numbers {
+    float: left;
+    width: 60px;
+    margin-left: 13px;
+}
+
+.adminList {
+    margin-left: 13px;
+}
+
+p {
+    margin-left: 13px;
+}
+
+pre {
+    margin-left: 13px;
+}
+
+.editList {
+    max-width: 180px;
+}
+
+.editAirplaneBlank {
+    display: none;
+    float: left;
+    margin-top: auto;
+}
+
+.editPilotBlank {
+    float: left;
+    margin-top: auto;
+}
+
+.tableEdit {
+    float: left;
+    height: 50px;
+    width: 15%;
+}
+
+.saveChanges {
+    float: left;
+    width: 15%;
+    margin-top: 15px;
+    height: 15%;
+}
+
+.AirList {
+    background-color: #00a2ff;
+    width: 50%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+}
+
+.choos {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+}
+.planeList {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    align-self: center;
+}
+
+#add {
+
+    margin-left: 37%;
+
+}
+
+.myButton {
+    background-color: #7892c2;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    border: 1px solid #4e6096;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 10px 10px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #283966;
+}
+
+.myButton:hover {
+    background-color: #476e9e;
+}
+
+.myButton:active {
+    position: relative;
+    top: 1px;
+}
+
+* {
+
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+.Blank {
+
+    background-color: #b3d4ff;
+    width: 50%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    display: none;
+}
+
+.choospilot {
+    width: 100%;
+    height: 100%;
+    background-color: #b3d4ff;
+
+}
+
+.tdColumns {
+    padding-right: 70px;
+}
+
+.choiceID {
+    height: 15%;
+    width: 100%;
+    margin: auto;
+    border-spacing: 20px;
+}
+
+.table1 {
+    margin-left: 30px;
+    width: 150px;
+    height: 35%;
+    float: left;
+}
+
+.table2 {
+    width: 70px;
+    height: 35%;
+    margin-left: 245px;
+    float: left;
+}
+
+.table3 {
+    width: 173px;
+    height: 35%;
+    margin-left: 130px;
+    float: left;
+}
+
+.flyCSS {
+    width: 80px;
+}
+
+.fly {
+    margin-bottom: auto;
+    width: 10%;
+    float: right;
+}
+
+
+
+.plane {
+    margin-left: 90px;
+}
+
+.coltable {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cities {
+    margin-left: 30px;
+}
+
+
+select {
+
+    color: #333;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.2em;
+    cursor: pointer;
+    text-indent: 0.01px;
+    text-overflow: "";
+    background: #b3d4ff; /* add your own arrow image */
+    *background-image: none; /* turn bg image for IE7 */
+    background: -webkit-linear-gradient(top, #b3d4ff);
+
+    -webkit-appearance: none; /* gets rid of default appearance in Webkit browsers*/
+    -moz-appearance: none; /* Get rid of default appearance for older Firefox browsers */
+    -ms-appearance: none; /* get rid of default appearance for IE8, 9 and 10*/
+    appearance: none;
+}
+
+select option {
+
+    background: #beeaff; /* style the dropdown bg color */
+}
+
+.body {
+    background-color: #e6faf5;
+}
+
+.newpilot {
+    float: left;
+    height: 50px;
+    width: 20%;
+}
+
+.Checkbox {
+    margin-bottom: 0%;
+    float: left;
+}

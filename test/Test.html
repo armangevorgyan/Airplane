@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="test.css">
+</head>
+<body class="body">
+<div class="admin">
+    <form>
+        <form>
+            <pre>Airplane Model</pre>
+            <input type="text" class="adminList takePlane">
+
+            <pre>max fly   max pilot  min pilot</pre>
+            <input type="text" class="numbers maxFly takePlane">
+
+            <input type="text" class="numbers maxPilot takePlane">
+
+            <input type="text" class="numbers minPilot takePlane"><br>
+
+            <pre>max pass  min pass</pre>
+
+            <input type="text" class="numbers maxPass takePlane">
+
+            <input type="text" class="numbers minPass takePlane">
+            <button type="button" class="addPlane"> Add AirPlane</button>
+        </form>
+
+        <pre>City</pre>
+        <input type="text" class="adminList takeCity">
+
+        <pre>Latitude       Longitude </pre>
+        </p> <input type="text" size="10" class="latitude adminList takeCity">
+        <input type="text" size="10" class="longitude adminList takeCity">
+        <button type="button" class="adminList addCity"> Add City</button>
+
+        <pre>Pilot Name                 Surname </pre>
+        <input type="text" class="adminList addPilot">
+        <input type="text" class="adminList addPilot">
+
+        <pre> Pilot Skills</pre>
+        <form class="checkboxSkills addPilotSkills">
+
+        </form>
+        <button type="button" class="adminList submitPilot"> Add Pilot</button>
+        <pre>Stewardess Name            Surname</pre>
+        <input type="text" class="adminList addStewardess">
+        <input type="text" class="adminList addStewardess">
+        <button type="button" class="adminList submitStew"> Add Stewardess</button>
+    </form>
+    <table>
+        <tr class="edit">
+            <td class="">
+                <form>
+                    <select class="pilotEdit editList " id="pilotEdit">
+                        <option style='display:none;'> Pilots Names</option>
+                    </select>
+                </form>
+            </td>
+            <td class="">
+                <form>
+                    <select class="stewardessEdit editList">
+                        <option style='display:none;'> Stewardess Names</option>
+                    </select>
+                </form>
+            </td>
+            <td class="">
+                <form>
+                    <select class="airplaneEdit editList" id="airplaneEdit">
+                        <option style='display:none;'> Air Plane Model</option>
+                    </select>
+                </form>
+            </td>
+        </tr>
+    </table>
+    <table class="workerNames tableEdit">
+        <tr>
+            <td class="editTd">
+    </table>
+    <button class="changePilot saveChanges">edt</button>
+    <table class="workerNames tableEdit">
+        <tr>
+            <td class="editTd">
+    </table>
+    <button class="changeStew saveChanges">edt</button>
+    <table class="workerNames tableEdit bu">
+        <tr>
+            <td class="editTd"></td>
+        </tr>
+    </table>
+    <button class="changePlane saveChanges">edt</button>
+    <div class="editAirplaneBlank">
+        <form>
+            <pre>Air Plane Model</pre>
+            <input type="text" class="adminList takePlane1">
+
+            <pre>max fly   max pilot  min pilot</pre>
+            <input type="text" class="numbers maxFly takePlane1">
+
+            <input type="text" class="numbers maxPilot takePlane1">
+
+            <input type="text" class="numbers minPilot takePlane1"><br>
+
+            <pre>max pass  min pass</pre>
+
+            <input type="text" class="numbers maxPass takePlane1">
+
+            <input type="text" class="numbers minPass takePlane1"> <br>
+            <button type="button" class=" adminList changePlane1"> Save Changes</button>
+        </form>
+    </div>
+    <div class="editPilotBlank">
+        <pre>Pilot Name Surname </pre>
+        <input type="text" class="adminList takePilot">
+        <input type="text" class="adminList takePilot">
+
+        <pre> Pilot Skills</pre>
+        <form class="checkboxSkills editPilotSkills">
+
+        </form>
+        <button type="button" class="adminList takeChangePilot"> Save Changes</button>
+    </div>
+</div>
+
+<div class="AirList">
+    <div class="choos">
+        <form class="planeList" name="planeList">
+
+            <select name="plane" class="plane" id="plane">
+                <option value="AirBus" style='display:none;'>AirBus Model</option>
+
+            </select> <br><br>
+
+            <select name="citiesFrom" class="citiesFrom cities" id="citiesFrom">
+                <option value="citiesFrom" style='display:none;'>Choose City From</option>
+            </select>
+
+            <select name="citiesTo" class="citiesTo cities" id="citiesTo">
+                <option value="citiesTo" style='display:none;'>Choose City To</option>
+            </select>
+
+        </form>
+        <br>
+        <button id="add" class="myButton">ADD</button>
+        <button class="update myButton">UPDATE</button>
+    </div>
+</div>
+<div class="Blank">
+    <div class="choospilot">
+        <table class="choiceID">
+            <tr class="trID">
+                <td class="choice">
+                </td>
+                <td class="choice1"></td>
+            </tr>
+            <tr id="trID1">
+                <table class="coltable">
+                    <tr></tr>
+                    <tr class="choosListID">
+                        <td class="tdColumns">Pilots</td>
+                        <td class="tdColumns">Stewardess</td>
+                        <td class="tdColumns">Passengers</td>
+
+
+                    </tr>
+                    <tr class="choosID">
+                        <td class="pilot tdColumns">
+                            <form>
+                                <select class="pilotID" id="pilotID">
+                                    <option style='display:none;'> Pilots Names</option>
+                                </select>
+                            </form>
+                        </td>
+                        <td class="stew tdColumns">
+                            <form>
+                                <select class="StewardessID" id="StewardessID">
+                                    <option style='display:none;'> Stewardess Names</option>
+                                </select>
+                            </form>
+                        </td>
+                        <td class="tdColumns">
+                            <input class="pass" type="text" maxlength="25">
+                        </td>
+                        <td class="flyCSS">
+                        </td>
+                    </tr>
+                </table>
+
+            </tr>
+        </table>
+        <table class="workerNames table1"></table>
+        <table class="workerNames table2"></table>
+        <table class="workerNames table3"></table>
+
+        <button class="fly myButton">Fly</button>
+    </div>
+</div>
+<script src="init.js" type="text/javascript"></script>
+<script src="view.js" type="text/javascript"></script>
+<script src="registerDependency.js" type="text/javascript"></script>
+<script src="controller.js" type="text/javascript"></script>
+<script src="airPlane.js" type="text/javascript"></script>
+<script src="city.js" type="text/javascript"></script>
+<script src="pilot.js" type="text/javascript"></script>
+<script src="stewardess.js" type="text/javascript"></script>
+<script src="flight.js" type="text/javascript"></script>
+
+</body>
+</html>
